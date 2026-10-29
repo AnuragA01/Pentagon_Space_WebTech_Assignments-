@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+<form action="#" method="post">
+<fieldset>
+    <legend>Registration Form</legend>
+
+    <table cellpadding="5" cellspacing="1">
+        <tr>
+            <td><label for="fname">Full Name</label></td>
+            <td>
+                <input type="text" id="fname" name="fname"
+                       maxlength="20" pattern="[A-Za-z ]+"
+                       title="Use letters and spaces only, maximum 20 characters"
+                       required>
+                (Max 20 characters, A-Z and a-z)
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="lname">Last Name</label></td>
+            <td>
+                <input type="text" id="lname" name="lname"
+                       maxlength="20" pattern="[A-Za-z ]+"
+                       title="Use letters and spaces only, maximum 20 characters"
+                       required>
+                (Max 20 characters, A-Z and a-z)
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="dob">Date of Birth</label></td>
+            <td><input type="date" id="dob" name="dob" required></td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="email">Email ID</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="mobile">Mobile No.</label></td>
+            <td>
+                <input type="tel" id="mobile" name="mobile"
+                       maxlength="10" pattern="[0-9]{10}"
+                       title="Enter exactly 10 digits" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="address">Address</label></td>
+            <td><textarea id="address" name="address"
+                          rows="5" cols="22" required></textarea></td>
+        </tr>
+
+        <tr>
+            <td><label for="city">City</label></td>
+            <td><input type="text" id="city" name="city" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="pincode">Pincode</label></td>
+            <td>
+                <input type="text" id="pincode" name="pincode"
+                       maxlength="6" pattern="[0-9]{6}"
+                       title="Enter exactly 6 digits" required>
+                (6-digit number)
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="state">State</label></td>
+            <td><input type="text" id="state" name="state" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="country">Country</label></td>
+            <td><input type="text" id="country" name="country" required></td>
+        </tr>
+
+        <tr>
+            <td>Hobbies</td>
+            <td>
+                <input type="checkbox" id="drawing" name="hobbies" value="Drawing">
+                <label for="drawing">Drawing</label>
+
+                <input type="checkbox" id="singing" name="hobbies" value="Singing">
+                <label for="singing">Singing</label>
+
+                <input type="checkbox" id="dancing" name="hobbies" value="Dancing">
+                <label for="dancing">Dancing</label>
+
+                <br>
+
+                <input type="checkbox" id="other" name="hobbies" value="Other">
+                <label for="other">Other</label>
+
+                <input type="text" name="other_hobby" maxlength="50">
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table cellpadding="5" cellspacing="1">
+        <tr>
+            <th>Qualification</th>
+            <th>Sl. No.</th>
+            <th>Examination</th>
+            <th>Board</th>
+            <th>Percentage</th>
+            <th>Year of Pass</th>
+        </tr>
+
+        <tr>
+            <td rowspan="4">Education</td>
+            <td>01</td>
+            <td><input type="text" name="exam1" size="12"></td>
+            <td><input type="text" name="board1" size="12"></td>
+            <td><input type="text" name="percentage1" size="10"></td>
+            <td><input type="text" name="year1" size="8"></td>
+        </tr>
+
+        <tr>
+            <td>02</td>
+            <td><input type="text" name="exam2" size="12"></td>
+            <td><input type="text" name="board2" size="12"></td>
+            <td><input type="text" name="percentage2" size="10"></td>
+            <td><input type="text" name="year2" size="8"></td>
+        </tr>
+
+        <tr>
+            <td>03</td>
+            <td><input type="text" name="exam3" size="12"></td>
+            <td><input type="text" name="board3" size="12"></td>
+            <td><input type="text" name="percentage3" size="10"></td>
+            <td><input type="text" name="year3" size="8"></td>
+        </tr>
+
+        <tr>
+            <td>04</td>
+            <td><input type="text" name="exam4" size="12"></td>
+            <td><input type="text" name="board4" size="12"></td>
+            <td><input type="text" name="percentage4" size="10"></td>
+            <td><input type="text" name="year4" size="8"></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table cellpadding="5" cellspacing="1">
+        <tr>
+            <td>Courses Applied For</td>
+            <td>
+                <input type="checkbox" id="bca" name="courses" value="BCA">
+                <label for="bca">BCA</label>
+
+                <input type="checkbox" id="bcom" name="courses" value="B.Com">
+                <label for="bcom">B.Com</label>
+
+                <input type="checkbox" id="bsc" name="courses" value="B.Sc">
+                <label for="bsc">B.Sc</label>
+
+                <input type="checkbox" id="ba" name="courses" value="B.A">
+                <label for="ba">B.A</label>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <div style="text-align: center;">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+
+</fieldset>
+</form>
+
+</body>
+</html>
